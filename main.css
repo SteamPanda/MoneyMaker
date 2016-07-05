@@ -1,0 +1,211 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  text-decoration: none;
+  overflow: hidden;
+  color: white;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparenst;
+}
+hr {
+  visibility: hidden;
+  height: 5px;
+}
+body {
+  background-color: Salmon;
+  height: 1000px;
+}
+#money_text {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 4px 4px 0 red;
+}
+#money_text::selection {
+  background: none;
+}
+#money_text::-moz-seclection {
+  background: none;
+}
+#dollar {
+  box-shadow: 4px 4px 0 #FA6756;
+  height: 400px;
+  width: 160px;
+  border: 20px solid mediumseagreen;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: palegreen;
+  cursor: pointer;
+  transition: 0.05s ease-out;
+}
+#dollar:hover {
+  height: 410px;
+  width: 170px;
+  margin-top: 95px;
+  box-shadow: 5px 5px 0 #FA6756;
+}
+#dollar:active {
+  height: 400px;
+  width: 160px;
+  margin-top: 100px;
+  box-shadow: 4px 4px 0 #FA6756;
+}
+#dollar-sign {
+  box-sizing: border-box;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 52px;
+  color: palegreen;
+  height: 30%;
+  width: 50%;
+  background-color: mediumseagreen;
+  border-radius: 100%;
+  margin: 25%;
+  margin-top: 75%;
+  transition: 0.05s ease-out;
+}
+#dollar-sign::selection {
+  background: none;
+}
+#dollar-sign::-moz-selection {
+  background: none;
+}
+#info_cont {
+  height: 100%;
+  width: 350px;
+  position: absolute;
+  bottom: 0;
+  border: 12px solid #F9CDC8;
+  border-bottom: 12px solid #FCA89E;
+  box-sizing: border-box;
+  background-color: salmon;
+  box-shadow: 4px 0 0 #FA6756,
+        inset 4px 4px 0 #FA6756;
+  overflow-y: scroll;
+  padding: 0;
+}
+#item_cont {
+  right: 0;
+  height: 100%;
+  width: 350px;
+  position: absolute;
+  bottom: 0;
+  border: 12px solid #F9CDC8;
+  border-bottom: 12px solid #FCA89E;
+  box-sizing: border-box;
+  background-color: salmon;  
+  box-shadow: inset 4px 4px 0 #FA6756;
+  overflow-y: scroll;
+  padding: 0;
+}
+.info {
+  margin: 10px;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 red;
+}
+.item {
+  height: 70px;
+  width: 315px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid #FCA89E;
+  margin: 5px;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 red;
+  cursor: pointer;
+  transition: 0.05s ease-out;
+  padding-left: 10px;
+  box-shadow: inset 3px 3px 0 red;
+}
+.item:hover {
+  box-shadow: 3px 3px 0 red;
+}
+span::selection {
+  background: none;
+}
+.amount {
+  margin-right: 10px;
+  text-align: right;
+  font-size: 40px;
+  text-shadow: 2px 2px 0 red;
+}
+.amount-cont {
+  right: 0;
+  position: absolute;
+  height: 100%;
+  margin-right: 5px;
+  margin-top: -23px;
+}
+#achv-cont {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+}
+.achv {
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+  border: 2px solid #FCA89E;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 2px;
+  box-shadow: inset 3px 3px 0 red;
+  transition: 0.05s ease-out;
+}
+.done {
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+  border: 2px solid #F9CDC8;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 2px;
+  box-shadow: 3px 3px 0 red;
+  transition: 0.05s ease-out;
+}
+.done:hover {
+  border-color: white;
+}
+.done > .pic {
+  color: white;
+}
+.pic {
+  font-size: 43px;
+  margin-left: 15px;
+  margin-top: 5px;
+  color: #F9CDC8;
+}
+.achv:hover {
+  border-color: #F9CDC8;
+  box-shadow: 3px 3px 0 red;
+}
+#achv-title {
+  font-size: 20px;
+  margin: 10px;
+  text-shadow: 2px 2px 0 red;
+}
+.big-ad {
+  width: 315px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 2px solid #FCA89E;
+  box-shadow: 3px 3px 0 red;
+}
+.line {
+  visibility: visible;
+  border: none;
+  height: 12px;
+  width: 100%;
+  background: #F9CDC8;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 4px 4px 0 #FA6756;
+}

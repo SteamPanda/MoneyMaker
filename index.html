@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Money Maker</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="money_text">$ 0</div>
+    <div id="dollar" onclick="makeMoney(1)">
+      <div id="dollar-sign">$</div>
+    </div>
+    <div id="info_cont">
+      <div id="total_cont" class="info">
+        <span>Total: <span id="total">$ 0</span></span>
+      </div>
+      <div id="alltime_cont" class="info">
+        <span>All Time: <span id="alltime">$ 0</span></span>
+      </div>
+      <div id="per_cont" class="info">
+        <span>$/Sec: <span id="persec">0</span></span>
+      </div>
+      <br/>
+      <span id="achv-title">Acheivements</span>
+      <div id="achv-cont">
+        <div id="achv1" class="achv"><span id="pic1" class="pic">?</span></div>
+        <div id="achv2" class="achv"><span id="pic2" class="pic">?</span></div>
+        <div id="achv3" class="achv"><span id="pic3" class="pic">?</span></div>
+        <div id="achv4" class="achv"><span id="pic4" class="pic">?</span></div>
+        <div id="achv5" class="achv"><span id="pic5" class="pic">?</span></div>
+        <div id="achv6" class="achv"><span id="pic6" class="pic">?</span></div>
+        <div id="achv7" class="achv"><span id="pic7" class="pic">?</span></div>
+        <div id="achv8" class="achv"><span id="pic8" class="pic">?</span></div>
+        <div id="achv9" class="achv"><span id="pic9" class="pic">?</span></div>
+        <div id="achv10" class="achv"><span id="pic10" class="pic">?</span></div>
+        <div id="achv11" class="achv"><span id="pic11" class="pic">?</span></div>
+        <div id="achv12" class="achv"><span id="pic12" class="pic">?</span></div>
+        <div id="achv13" class="achv"><span id="pic13" class="pic">?</span></div>
+        <div id="achv14" class="achv"><span id="pic14" class="pic">?</span></div>
+        <div id="achv15" class="achv"><span id="pic15" class="pic">?</span></div>
+        <div id="achv16" class="achv"><span id="pic16" class="pic">?</span></div>
+        <div id="achv17" class="achv"><span id="pic17" class="pic">?</span></div>
+        <div id="achv18" class="achv"><span id="pic18" class="pic">?</span></div>
+        <div id="achv19" class="achv"><span id="pic19" class="pic">?</span></div>
+        <div id="achv20" class="achv"><span id="pic20" class="pic">?</span></div>
+        <div id="achv21" class="achv"><span id="pic21" class="pic">?</span></div>
+        <div id="achv22" class="achv"><span id="pic22" class="pic">?</span></div>
+        <div id="achv23" class="achv"><span id="pic23" class="pic">?</span></div>
+        <div id="achv24" class="achv"><span id="pic24" class="pic">?</span></div>
+        <div id="achv25" class="achv"><span id="pic25" class="pic">?</span></div>
+        <div id="achv26" class="achv"><span id="pic26" class="pic">?</span></div>
+        <div id="achv27" class="achv"><span id="pic27" class="pic">?</span></div>
+        <div id="achv28" class="achv"><span id="pic28" class="pic">?</span></div>
+        <div id="achv29" class="achv"><span id="pic29" class="pic">?</span></div>
+        <div id="achv30" class="achv"><span id="pic30" class="pic">?</span></div>
+        <div id="achv31" class="achv"><span id="pic31" class="pic">?</span></div>
+        <div id="achv32" class="achv"><span id="pic32" class="pic">?</span></div>
+        <div id="achv33" class="achv"><span id="pic33" class="pic">?</span></div>
+        <div id="achv34" class="achv"><span id="pic34" class="pic">?</span></div>
+        <div id="achv35" class="achv"><span id="pic35" class="pic">?</span></div>
+        <div id="achv36" class="achv"><span id="pic36" class="pic">?</span></div>
+        <div id="achv37" class="achv"><span id="pic37" class="pic">?</span></div>
+        <div id="achv38" class="achv"><span id="pic38" class="pic">?</span></div>
+        <div id="achv39" class="achv"><span id="pic39" class="pic">?</span></div>
+        <div id="achv40" class="achv"><span id="pic40" class="pic">?</span></div>
+        <div id="achv41" class="achv"><span id="pic41" class="pic">?</span></div>
+        <div id="achv42" class="achv"><span id="pic42" class="pic">?</span></div>
+        <div id="achv43" class="achv"><span id="pic43" class="pic">?</span></div>
+        <div id="achv44" class="achv"><span id="pic44" class="pic">?</span></div>
+        <div id="achv45" class="achv"><span id="pic45" class="pic">?</span></div>
+        <div id="achv46" class="achv"><span id="pic46" class="pic">?</span></div>
+        <div id="achv47" class="achv"><span id="pic47" class="pic">?</span></div>
+        <div id="achv48" class="achv"><span id="pic48" class="pic">?</span></div>
+        <div id="achv49" class="achv"><span id="pic49" class="pic">?</span></div>
+        <div id="achv50" class="achv"><span id="pic50" class="pic">?</span></div>
+      </div>
+    </div>
+    <div id="item_cont">
+      <div>
+      <div id="item1" class="item" onclick="buyItem1()">
+        <span>Piggy Bank</span>
+        <div class="amount-cont">
+          <span id="item1-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item1-price">15</span></span>
+      </div>
+      <div id="item2" class="item" onclick="buyItem2()">
+        <span>ATM</span>
+        <div class="amount-cont">
+          <span id="item2-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item2-price">100</span></span>
+      </div>
+      <div id="item3" class="item" onclick="buyItem3()">
+        <span>Bank</span>
+        <div class="amount-cont">
+          <span id="item3-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item3-price">500</span></span>
+      </div>
+      <div id="item4" class="item" onclick="buyItem4()">
+        <span>Printer</span>
+        <div class="amount-cont">
+          <span id="item4-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item4-price">5000</span></span>
+      </div>
+      <div id="item5" class="item" onclick="buyItem5()">
+        <span>Complex</span>
+        <div class="amount-cont">
+          <span id="item5-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item5-price">20000</span></span>
+      </div>
+      <div id="item6" class="item" onclick="buyItem6()">
+        <span>Drug Money</span>
+        <div class="amount-cont">
+          <span id="item6-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item6-price">100000</span></span>
+      </div>
+      <div id="item7" class="item" onclick="buyItem7()">
+        <span>Crime Ring</span>
+        <div class="amount-cont">
+          <span id="item7-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item7-price">2000000</span></span>
+      </div>
+      <div id="item8" class="item" onclick="buyItem8()">
+        <span>Inflation</span>
+        <div class="amount-cont">
+          <span id="item8-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item8-price">1000000000</span></span>
+      </div>
+      <div id="item9" class="item" onclick="buyItem9()">
+        <span>BTC</span>
+        <div class="amount-cont">
+          <span id="item9-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item9-price">500000000000</span></span>
+      </div>
+      <div id="item10" class="item" onclick="buyItem10()">
+        <span>Inifinity Coins</span>
+        <div class="amount-cont">
+          <span id="item10-amount" class="amount">0</span>
+        </div>
+        <hr/>
+        <span>$ <span id="item10-price">2000000000000</span></span>
+      </div>
+      </div>
+      <hr class="line"/>
+      <div id="adspace">
+        <iframe class="big-ad" src="http://www.w3schools.com"></iframe>
+        <iframe class="big-ad" src="http://www.w3schools.com"></iframe>
+        <iframe class="big-ad" src="http://www.w3schools.com"></iframe>
+        <iframe class="big-ad" src="http://www.w3schools.com"></iframe>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
