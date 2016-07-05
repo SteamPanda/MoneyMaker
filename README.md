@@ -1,2 +1,2 @@
-# MoneyMaker
+# Money Maker
 An Incremental Game
